@@ -1,9 +1,13 @@
 import { Routes } from '@angular/router';
+import {Component5Component} from "./components/component-5/component-5.component";
+import {Component8Component} from "./components/component-8/component-8.component";
+import {Module1Module} from "./components/module-1/module-1.module";
+import {Component1Component} from "./components/component-1/component-1.component";
 
 export const routes: Routes = [
   {
     path: 'one',
-    loadComponent: () => import('./components/component-1/component-1.component').then(m => m.Component1Component),
+    component: Component1Component,
   },
   {
     path: 'two',

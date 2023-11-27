@@ -16,6 +16,10 @@ const routes: Routes = [
   {
     path: 'six',
     component: Component6Component,
+  },
+  {
+    path: 'seven',
+    loadComponent: () => import('../component-7/component-7.component').then(m => m.Component7Component),
   }
 ];
 
